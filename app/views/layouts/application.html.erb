@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
       <div class="container">
-        <a class="navbar-brand" href="#">AAAAA</a>
+        <a class="navbar-brand" href="#" id="logo">Sample App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,13 +21,13 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Help</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Log In</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link disabled" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
             </li>
           </ul>
         </div>
@@ -38,4 +38,21 @@
       <%= yield %>
     </div>
   </body>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+        <small>
+          The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+          by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+        </small>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><%= link_to "About",   '#', class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to "Contact", '#', class: "nav-link" %></li>
+          <li class="nav-item"><a href="http://news.railstutorial.org/", class="nav-link">News</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
 </html>
