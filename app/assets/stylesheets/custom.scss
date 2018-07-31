@@ -137,3 +137,18 @@ p {
     margin: 0 0 30px 0;
   }
 }
+
+/* dropdown */
+.dropdown-menu.show {
+  display: block;
+  margin-top: 7px;
+  padding: 0px;
+
+  .nav-link {
+    color: rgba(52, 58, 64, 1)!important;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .05);
+    }
+  }
+}
