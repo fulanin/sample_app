@@ -1,6 +1,6 @@
-<h1>Editing User</h1>
+<% provide(:title, 'Profile Settings') %>
+<h1>Profile Settings</h1>
 
-<%= render 'form', user: @user %>
+<%= render 'formEdit', user: @user %>
 
-<%= link_to 'Show', @user %> |
 <a href="javascript:window.history.back();"> Back </a>
